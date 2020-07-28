@@ -6,6 +6,10 @@
   height: auto;
 }
 
-.le-btn-{
-  margin-right: 10px;
+.demo_wrapper .leButton{
+  margin: 0 10px;
+}
+
+.select-demo{
+  width: 300px;
 }

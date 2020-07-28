@@ -8,7 +8,6 @@ class LeInput extends React.Component {
     this.onChange = this.onChange.bind(this)
     this.onEnter = this.onEnter.bind(this)
     this.onBlur = this.onBlur.bind(this)
-    this.classNames = this.props.classNames?.join(" ") || ""
     this.input = React.createRef()
     this.state = {
       showErrorMsg: false
@@ -74,7 +73,7 @@ class LeInput extends React.Component {
   render() {
     let {label, errormsg} = this.props
     return (
-      <div className={"leInput " + this.classNames}>
+      <div className={"leInput " + this.props.className}>
         <label>{label}</label>
         <input 
           {...this.props} 

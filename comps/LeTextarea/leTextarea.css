@@ -1,0 +1,19 @@
+.leTextarea textarea{
+  width: 200px;
+  height: 100px;
+  outline: none;
+  vertical-align: top;
+  resize: none;
+}
+
+.leTextarea textarea:focus, .leTextarea textarea:hover {
+  border-color: #1890ff;
+}
+
+.leTextarea .leTextarea-error{
+  color: red;
+  font-size: 12px;
+  line-height: 1.2;
+  display: block;
+  padding: 3px 0 0 0;
+}

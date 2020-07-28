@@ -8,13 +8,15 @@ class LeButton extends React.Component {
   }
 
   getClassNames() {
-    let  {type, block, dangerous, shape, size} = this.props, baseClass = "le-btn-", classNames = [baseClass];
+    let  {type, block, dangerous, shape, size} = this.props, baseClass = "leButton", classNames = [baseClass];
 
-    type ? classNames.push(baseClass + type) : "";
-    block ? classNames.push(baseClass + "block") : "";
-    dangerous ? classNames.push(baseClass + "dangerous") : "";
-    shape ? classNames.push(baseClass + shape) : "";
-    size ? classNames.push(baseClass + size) : "";
+    type ? classNames.push(`${baseClass}-${type}`) : "";
+    block ? classNames.push(`${baseClass}-block`) : "";
+    dangerous ? classNames.push(`${baseClass}-dangerous`) : "";
+    shape ? classNames.push(`${baseClass}-${shape}`) : "";
+    size ? classNames.push(`${baseClass}-${size}`) : "";
+
+    // classNames.push(`${baseClass}-${type}`).push(`${baseClass}-block`).push(``)
 
     return classNames.join(" ");
   }

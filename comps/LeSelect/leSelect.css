@@ -1,0 +1,124 @@
+.leSelect{
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  color: rgba(0,0,0,.65);
+  font-size: 14px;
+  font-variant: tabular-nums;
+  line-height: 1.5715;
+  list-style: none;
+  -webkit-font-feature-settings: 'tnum';
+  font-feature-settings: 'tnum';
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.leSelect .hide{
+  display: none;
+}
+
+.leSt-selector{
+  position: relative;
+  background-color: #fff;
+  border: 1px solid #d9d9d9;
+  border-radius: 2px;
+  -webkit-transition: all .3s cubic-bezier(.645,.045,.355,1);
+  transition: all .3s cubic-bezier(.645,.045,.355,1);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 1px 4px;
+}
+
+.leSelect-multiple .leSt-selector-item{
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 0;
+  -ms-flex: none;
+  flex: none;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  max-width: 100%;
+  height: 24px;
+  margin-top: 2px;
+  margin-right: 4px;
+  margin-bottom: 2px;
+  padding: 0 4px 0 8px;
+  line-height: 22px;
+  background: #f5f5f5;
+  border: 1px solid #f0f0f0;
+  border-radius: 2px;
+  cursor: default;
+  -webkit-transition: font-size .3s,line-height .3s,height .3s;
+  transition: font-size .3s,line-height .3s,height .3s;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.leSelect-multiple .leSt-selector-item .leSt-select-item-content {
+  display: inline-block;
+  margin-right: 4px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.leSt-select-item-remove{
+  display: none;
+}
+.leSelect-multiple .leSt-selector-item .leSt-select-item-remove{
+  font-size: 12px;
+  display: inline;
+}
+
+.leSt-input{
+  width: 30px;
+  outline: none;
+  border: 0;
+}
+
+.leSt-opts-dropdown{
+  position: absolute;
+  z-index: 1050;
+  margin-top: 3px;
+  padding: 4px 0;
+  color: rgba(0,0,0,.65);
+  font-variant: tabular-nums;
+  font-feature-settings: 'tnum';
+  font-size: 14px;
+  font-variant: initial;
+  width: 100%;
+  max-height: 200px;
+  line-height: 1.5715;
+  list-style: none;
+  /* top: -9999px;
+  left: -9999px; */
+  box-sizing: border-box;
+  overflow: hidden;
+  background-color: #fff;
+  outline: none;
+  overflow: auto;
+  border-radius: 2px;
+  box-shadow: 0 3px 6px -4px rgba(0,0,0,.12), 0 6px 16px 0 rgba(0,0,0,.08), 0 9px 28px 8px rgba(0,0,0,.05);
+  -webkit-box-sizing: border-box;
+  -webkit-box-shadow: 0 3px 6px -4px rgba(0,0,0,.12), 0 6px 16px 0 rgba(0,0,0,.08), 0 9px 28px 8px rgba(0,0,0,.05);
+  -webkit-font-feature-settings: 'tnum';
+
+}
+
+.leSt-opt-item{
+  padding: 5px 15px;
+}
+
+.leSt-opt-item.selected{
+  background-color: #e6f7ff;
+}
